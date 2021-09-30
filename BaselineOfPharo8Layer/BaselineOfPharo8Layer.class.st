@@ -11,7 +11,7 @@ BaselineOfPharo8Layer >> baseline: spec [
 	spec for: #common do: [ "Packages" 			
 				spec 
 				package: 'BlueInk' with: [  ];
-				package: 'Pharo8Layer' with: [ spec requires: #('NewBloc') ].
+				package: 'Pharo8Layer' with: [ "spec requires: #('NewBloc')" ].
  "Groups" 
 		spec group: 'default' with: #( 'BlueInk' 'Pharo8Layer' ) ]
 ]
