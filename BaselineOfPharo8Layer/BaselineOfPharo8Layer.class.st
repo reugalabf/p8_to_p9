@@ -6,22 +6,12 @@ Class {
 
 { #category : #baselines }
 BaselineOfPharo8Layer >> baseline: spec [
+
 	<baseline>
-	
-	spec 
-		for: #common
-		do: [ 
-								
-			"Packages"
-"			spec 
-				package: 'XML-Writer-Core' with: [ spec requires: #('OrderPreservingDictionary') ];
-				package: 'XML-Writer-Tests' with: [ spec requires: #('XML-Writer-Core' 'OrderPreservingDictionary Tests') ].
-"						
-			"Groups"
-"			spec
-				group: 'Core' with: #('XML-Writer-Core');
-				group: 'Tools' with: #('OrderPreservingDictionary Tools');  
-				group: 'Tests' with: #('XML-Writer-Tests'); 	
-				group: 'all' with: #('Core' 'Tools' 'Tests');
-				group: 'default' with: #('all')" ].
+	spec for: #common do: [ "Packages" 			
+				spec 
+				package: 'BlueInk' with: [  ];
+				package: 'Pharo8Layer' with: [ spec requires: #('NewBloc') ].
+ "Groups" 
+		spec group: 'default' with: #( 'BlueInk' 'Pharo8Layer' ) ]
 ]
