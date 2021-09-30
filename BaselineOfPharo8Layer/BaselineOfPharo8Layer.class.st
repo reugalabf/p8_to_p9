@@ -11,6 +11,7 @@ BaselineOfPharo8Layer >> baseline: spec [
 	spec for: #common do: [ "Packages"
 		spec
 			package: 'BlueInk-Core-Announcements';
+			package: 'BlueInk-Core-Utilities';
 			package: 'BlueInk-Core-Base';
 			package: 'BlueInk-Core-Examples';
 			package: 'BlueInk-Core-Utilities';
@@ -19,7 +20,7 @@ BaselineOfPharo8Layer >> baseline: spec [
 		"Groups"
 		spec
 			group: 'default'
-			with: #( 'BlueInk-Core-Announcements' 'BlueInk-Core-Base'
+			with: #( 'BlueInk-Core-Announcements' 'BlueInk-Core-Utilities' 'BlueInk-Core-Base'
 				   'BlueInk-Core-Examples' 'BlueInk-Core-Utilities' 'BlueInk-Extras-Settings'
 				   'Pharo8Layer' ) ]
 ]
