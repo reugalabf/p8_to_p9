@@ -20,6 +20,6 @@ BaselineOfPharo8Layer >> baseline: spec [
 		spec
 			group: 'default'
 			with: #( 'BlueInk-Core-Announcements' 'BlueInk-Core-Base'
-				   'BlueInk-Core-Examples' 'BlueInk-Core-Utilities''BlueInk-Extras-Settings'
+				   'BlueInk-Core-Examples' 'BlueInk-Core-Utilities' 'BlueInk-Extras-Settings'
 				   'Pharo8Layer' ) ]
 ]
