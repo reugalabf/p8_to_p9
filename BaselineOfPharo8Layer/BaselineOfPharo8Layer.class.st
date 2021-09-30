@@ -8,10 +8,18 @@ Class {
 BaselineOfPharo8Layer >> baseline: spec [
 
 	<baseline>
-	spec for: #common do: [ "Packages" 			
-				spec 
-				package: 'BlueInk' with: [  ];
-				package: 'Pharo8Layer' with: [ "spec requires: #('NewBloc')" ].
- "Groups" 
-		spec group: 'default' with: #( 'BlueInk' 'Pharo8Layer' ) ]
+	spec for: #common do: [ "Packages"
+		spec
+			package: 'BlueInk-Core-Announcements';
+			package: 'BlueInk-Core-Base';
+			package: 'BlueInk-Core-Examples';
+			package: 'BlueInk-Core-Utilities';
+			package: 'BlueInk-Extras-Settings';
+			package: 'Pharo8Layer' with: [ "spec requires: #('NewBloc')" ].
+		"Groups"
+		spec
+			group: 'default'
+			with: #( 'BlueInk-Core-Announcements' 'BlueInk-Core-Base'
+				   'BlueInk-Core-Examples' 'BlueInk-Core-Utilities''BlueInk-Extras-Settings'
+				   'Pharo8Layer' ) ]
 ]
